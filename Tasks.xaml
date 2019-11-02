@@ -1,0 +1,265 @@
+﻿<Window x:Class="IIQ_Dashboard.Tasks"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IIQ_Dashboard"
+        mc:Ignorable="d"
+         Title="IIQ Tasks" Icon="C:\final\IIQ Dashboard\IIQ Dashboard\images\tasks1.png" Background="WhiteSmoke" Width="500" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="ThreeDBorderWindow" BorderThickness="2" BorderBrush="#007FFF" >
+    <Window.Resources>
+        <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="#FF3598DC"/>
+        <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="#FFD0D1D7" />
+        <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="White" />
+        <SolidColorBrush x:Key="{x:Static SystemColors.ControlTextBrushKey}" Color="Black" />
+        <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="Transparent" />
+        <SolidColorBrush x:Key="{x:Static SystemColors.ScrollBarColor}" Color="#FFD0D1D7" />
+    </Window.Resources>
+
+    <Grid Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}">
+        <Grid.ContextMenu>
+            <ContextMenu BorderThickness="0,1,1,1" FontFamily="Calibri" />
+        </Grid.ContextMenu>
+        <Grid.Effect>
+            <DropShadowEffect/>
+        </Grid.Effect>
+
+        <TabControl TabStripPlacement="Left" >
+            <TabControl.Resources>
+                <Style TargetType="{x:Type TabItem}">
+                    <Setter Property="HeaderTemplate">
+                        <Setter.Value>
+                            <DataTemplate>
+                                <ContentPresenter Content="{TemplateBinding Content}">
+                                    <ContentPresenter.LayoutTransform>
+                                        <RotateTransform Angle="270" />
+                                    </ContentPresenter.LayoutTransform>
+                                </ContentPresenter>
+                            </DataTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="Padding" Value="10" />
+                </Style>
+            </TabControl.Resources>
+            <TabItem Header="Daily Task Status" >
+                <DataGrid Grid.Row="4" AutoGenerateColumns="False" CanUserSortColumns="True" CanUserResizeRows="False" Grid.Column="1" Grid.ColumnSpan="2" x:Name="tskgrid" Background="White" Foreground="Black" VerticalGridLinesBrush="{x:Null}" AlternatingRowBackground="#FFEAEAEA" HorizontalGridLinesBrush="#FFD6D6D6" GridLinesVisibility="Horizontal" CanUserReorderColumns="False" CanUserResizeColumns="False" MinColumnWidth="16" RowBackground="#FFF2F2F2" RowHeight="50">
+                <!--<DataGrid Grid.Row="4" AutoGenerateColumns="False" CanUserSortColumns="True" CanUserResizeRows="False" Grid.Column="1" Grid.ColumnSpan="2" x:Name="tskgrid"  Foreground="Black" VerticalGridLinesBrush="#FFD6D6D6" AlternatingRowBackground="#FFEAEAEA" HorizontalGridLinesBrush="#FFD6D6D6" GridLinesVisibility="All" CanUserReorderColumns="False" CanUserResizeColumns="False" MinColumnWidth="16"  RowBackground="#FFF2F2F2" RowHeight="50" ColumnWidth="350" ColumnHeaderHeight="30" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" />-->
+                <DataGrid.Columns>    
+                <!--Name column-->
+                    <DataGridTextColumn Header="Name" Binding="{Binding name}" Width="150*"  >
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="TextWrapping" Value="Wrap"/>
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                        <DataGridTextColumn.EditingElementStyle>
+                            <Style TargetType="TextBox">
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                                <Setter Property="Foreground" Value="Blue"/>
+                                <Setter Property="Text" Value="{Binding name}"/>
+                            </Style>
+                        </DataGridTextColumn.EditingElementStyle>
+                    </DataGridTextColumn>
+                        <!--Created column-->
+                        <DataGridTemplateColumn Header="Created" Width="150*">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding created}" Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                            <DataGridTemplateColumn.CellEditingTemplate>
+                                <DataTemplate>
+                                    <DatePicker SelectedDate="{Binding created}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
+                        <!--Completed column-->
+                        <DataGridTemplateColumn Header="Completed" Width="150*">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding completed}" Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                            <DataGridTemplateColumn.CellEditingTemplate>
+                                <DataTemplate>
+                                    <DatePicker SelectedDate="{Binding completed}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
+                        <!--Status column-->
+                        <DataGridTextColumn Header="Status" Binding="{Binding status}" Width="150*"  >
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="TextWrapping" Value="Wrap"/>
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                    <Setter Property="VerticalAlignment" Value="Center"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                            <DataGridTextColumn.EditingElementStyle>
+                                <Style TargetType="TextBox">
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                    <Setter Property="VerticalAlignment" Value="Center"/>
+                                    <Setter Property="Foreground" Value="Blue"/>
+                                    <Setter Property="Text" Value="{Binding status}"/>
+                                </Style>
+                            </DataGridTextColumn.EditingElementStyle>
+                        </DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Failed Tasks" >
+                <!--<DataGrid Grid.Row="4" AutoGenerateColumns="False" CanUserSortColumns="True" ColumnWidth="350" CanUserResizeRows="False" Grid.Column="1" Grid.ColumnSpan="2" x:Name="fltskgrid"  Foreground="Black" VerticalGridLinesBrush="#FFD6D6D6" AlternatingRowBackground="#FFEAEAEA" HorizontalGridLinesBrush="#FFD6D6D6" GridLinesVisibility="All" CanUserReorderColumns="False" CanUserResizeColumns="False" MinColumnWidth="16"  RowBackground="#FFF2F2F2" RowHeight="50"  ColumnHeaderHeight="30" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" />-->
+                <DataGrid Grid.Row="4" AutoGenerateColumns="False" CanUserSortColumns="True" CanUserResizeRows="False" Grid.Column="1" Grid.ColumnSpan="2" x:Name="fltskgrid" Background="White" Foreground="Black" VerticalGridLinesBrush="{x:Null}" AlternatingRowBackground="#FFEAEAEA" HorizontalGridLinesBrush="#FFD6D6D6" GridLinesVisibility="Horizontal" CanUserReorderColumns="False" CanUserResizeColumns="False" MinColumnWidth="16" RowBackground="#FFF2F2F2" RowHeight="50">
+                    <!--<DataGrid Grid.Row="4" AutoGenerateColumns="False" CanUserSortColumns="True" CanUserResizeRows="False" Grid.Column="1" Grid.ColumnSpan="2" x:Name="tskgrid"  Foreground="Black" VerticalGridLinesBrush="#FFD6D6D6" AlternatingRowBackground="#FFEAEAEA" HorizontalGridLinesBrush="#FFD6D6D6" GridLinesVisibility="All" CanUserReorderColumns="False" CanUserResizeColumns="False" MinColumnWidth="16"  RowBackground="#FFF2F2F2" RowHeight="50" ColumnWidth="350" ColumnHeaderHeight="30" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" />-->
+                    <DataGrid.Columns>
+                        <!--Name column-->
+                        <DataGridTextColumn Header="Name" Binding="{Binding name}" Width="150*"  >
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="TextWrapping" Value="Wrap"/>
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                    <Setter Property="VerticalAlignment" Value="Center"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                            <DataGridTextColumn.EditingElementStyle>
+                                <Style TargetType="TextBox">
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                    <Setter Property="VerticalAlignment" Value="Center"/>
+                                    <Setter Property="Foreground" Value="Blue"/>
+                                    <Setter Property="Text" Value="{Binding name}"/>
+                                </Style>
+                            </DataGridTextColumn.EditingElementStyle>
+                        </DataGridTextColumn>
+                        <!--Created column-->
+                        <DataGridTemplateColumn Header="Created" Width="150*">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding created}" Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                            <DataGridTemplateColumn.CellEditingTemplate>
+                                <DataTemplate>
+                                    <DatePicker SelectedDate="{Binding created}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
+                        <!--Completed column-->
+                        <DataGridTemplateColumn Header="Completed" Width="150*">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding completed}" Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                            <DataGridTemplateColumn.CellEditingTemplate>
+                                <DataTemplate>
+                                    <DatePicker SelectedDate="{Binding completed}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                    <DataGrid.RowDetailsTemplate>
+                        <DataTemplate>
+                            <Border BorderThickness="2" Background="#FF36BCDC" >
+                                <Grid Height="75">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="30"/>
+                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="50*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="10"/>
+                                        <RowDefinition Height="25"/>
+                                        <RowDefinition Height="5"/>
+                                        <RowDefinition Height="25"/>
+                                        <RowDefinition Height="15"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Text="Error Message" TextWrapping="Wrap" Foreground="Black" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                                    <TextBox TextWrapping="Wrap" Grid.Row="1" Grid.Column="2" Text="{Binding Path=error_message}" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                                    
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </DataGrid.RowDetailsTemplate>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Warnings" >
+            <!--<DataGrid Grid.Row="4" AutoGenerateColumns="True" CanUserSortColumns="True" CanUserResizeRows="False" Grid.Column="1" Grid.ColumnSpan="2" x:Name="wargrid"  Foreground="Black" VerticalGridLinesBrush="#FFD6D6D6" AlternatingRowBackground="#FFEAEAEA" HorizontalGridLinesBrush="#FFD6D6D6" GridLinesVisibility="All" CanUserReorderColumns="False" CanUserResizeColumns="False" MinColumnWidth="16"  RowBackground="#FFF2F2F2" RowHeight="50" ColumnWidth="350" ColumnHeaderHeight="30" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" />-->
+                <DataGrid Grid.Row="4" AutoGenerateColumns="False" CanUserSortColumns="True" CanUserResizeRows="False" Grid.Column="1" Grid.ColumnSpan="2" x:Name="wargrid" Background="White" Foreground="Black" VerticalGridLinesBrush="{x:Null}" AlternatingRowBackground="#FFEAEAEA" HorizontalGridLinesBrush="#FFD6D6D6" GridLinesVisibility="Horizontal" CanUserReorderColumns="False" CanUserResizeColumns="False" MinColumnWidth="16" RowBackground="#FFF2F2F2" RowHeight="50">
+                    <!--<DataGrid Grid.Row="4" AutoGenerateColumns="False" CanUserSortColumns="True" CanUserResizeRows="False" Grid.Column="1" Grid.ColumnSpan="2" x:Name="tskgrid"  Foreground="Black" VerticalGridLinesBrush="#FFD6D6D6" AlternatingRowBackground="#FFEAEAEA" HorizontalGridLinesBrush="#FFD6D6D6" GridLinesVisibility="All" CanUserReorderColumns="False" CanUserResizeColumns="False" MinColumnWidth="16"  RowBackground="#FFF2F2F2" RowHeight="50" ColumnWidth="350" ColumnHeaderHeight="30" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" />-->
+                    <DataGrid.Columns>
+                        <!--Name column-->
+                        <DataGridTextColumn Header="Name" Binding="{Binding name}" Width="150*"  >
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="TextWrapping" Value="Wrap"/>
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                    <Setter Property="VerticalAlignment" Value="Center"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                            <DataGridTextColumn.EditingElementStyle>
+                                <Style TargetType="TextBox">
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                    <Setter Property="VerticalAlignment" Value="Center"/>
+                                    <Setter Property="Foreground" Value="Blue"/>
+                                    <Setter Property="Text" Value="{Binding name}"/>
+                                </Style>
+                            </DataGridTextColumn.EditingElementStyle>
+                        </DataGridTextColumn>
+                        <!--Created column-->
+                        <DataGridTemplateColumn Header="Created" Width="150*">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding created}" Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                            <DataGridTemplateColumn.CellEditingTemplate>
+                                <DataTemplate>
+                                    <DatePicker SelectedDate="{Binding created}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
+                        <!--Completed column-->
+                        <DataGridTemplateColumn Header="Completed" Width="150*">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding completed}" Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                            <DataGridTemplateColumn.CellEditingTemplate>
+                                <DataTemplate>
+                                    <DatePicker SelectedDate="{Binding completed}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                    <DataGrid.RowDetailsTemplate>
+                        <DataTemplate>
+                            <Border BorderThickness="2" Background="#FF36BCDC" >
+                                <Grid Height="75">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="30"/>
+                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="50*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="10"/>
+                                        <RowDefinition Height="25"/>
+                                        <RowDefinition Height="5"/>
+                                        <RowDefinition Height="25"/>
+                                        <RowDefinition Height="15"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Text="Error Message" TextWrapping="Wrap" Foreground="Black" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                                    <TextBox TextWrapping="Wrap" Grid.Row="1" Grid.Column="2" Text="{Binding Path=error_message}" VerticalAlignment="Center" HorizontalAlignment="Left" />
+
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </DataGrid.RowDetailsTemplate>
+                </DataGrid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

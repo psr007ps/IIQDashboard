@@ -1,0 +1,67 @@
+C:\final\IIQ Dashboard\IIQ Dashboard\bin\Debug\IIQ Dashboard.exe.config
+C:\final\IIQ Dashboard\IIQ Dashboard\bin\Debug\IIQ Dashboard.exe
+C:\final\IIQ Dashboard\IIQ Dashboard\bin\Debug\IIQ Dashboard.pdb
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ Dashboard.csprojResolveAssemblyReference.cache
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\MainWindow.g.cs
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\App.g.cs
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ Dashboard_MarkupCompile.cache
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ Dashboard_MarkupCompile.lref
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\MainWindow.baml
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ Dashboard.g.resources
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ_Dashboard.Properties.Resources.resources
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ Dashboard.csproj.GenerateResource.Cache
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ Dashboard.csproj.CoreCompileInputs.cache
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ Dashboard.exe
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ Dashboard.pdb
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\Test All Applications(UAT).g.cs
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\Test All Applications(UAT).baml
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\Tasks.g.cs
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\Tasks.baml
+C:\final\IIQ Dashboard\IIQ Dashboard\bin\Debug\WebDriver.dll
+C:\final\IIQ Dashboard\IIQ Dashboard\bin\Debug\WebDriver.Support.dll
+C:\final\IIQ Dashboard\IIQ Dashboard\bin\Debug\WebDriver.xml
+C:\final\IIQ Dashboard\IIQ Dashboard\bin\Debug\WebDriver.Support.xml
+C:\final\IIQ Dashboard\IIQ Dashboard\bin\Debug\IIQ Dashboard.exe.manifest
+C:\final\IIQ Dashboard\IIQ Dashboard\bin\Debug\IIQ Dashboard.application
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ Dashboard.exe.manifest
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ Dashboard.application
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\App.baml
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\Styles\TestConnectionsStyle.baml
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\Styles\IIQDashboardStyles.baml
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\Test All Applications (Dev-A).g.cs
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\Test All Applications (Dev-A).baml
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\Test All Applications (Dev-B).g.cs
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\Test All Applications (Dev-B).baml
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\Test All Applications (UAT-B).g.cs
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\Test All Applications (UAT-B).baml
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\Login.g.cs
+C:\final\IIQ Dashboard\IIQ Dashboard\obj\Debug\Login.baml
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ Dashboard.csprojResolveAssemblyReference.cache
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\Login.g.cs
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\MainWindow.g.cs
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\Tasks.g.cs
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\Test All Applications (Dev-A).g.cs
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\Test All Applications (Dev-B).g.cs
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\Test All Applications (UAT-B).g.cs
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\Test All Applications(UAT).g.cs
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\App.g.cs
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ Dashboard_MarkupCompile.cache
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ Dashboard_MarkupCompile.lref
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\App.baml
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\Login.baml
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\MainWindow.baml
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\Styles\IIQDashboardStyles.baml
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\Styles\TestConnectionsStyle.baml
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\Tasks.baml
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\Test All Applications (Dev-A).baml
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\Test All Applications (Dev-B).baml
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\Test All Applications (UAT-B).baml
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\Test All Applications(UAT).baml
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ Dashboard.g.resources
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ_Dashboard.Properties.Resources.resources
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ Dashboard.csproj.GenerateResource.Cache
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ Dashboard.exe
+C:\Users\pranshu shrivastava\Downloads\IIQ_Dashboard(.NET)\IIQ Dashboard\IIQ Dashboard\obj\Debug\IIQ Dashboard.pdb
