@@ -88,22 +88,7 @@ namespace IIQ_Dashboard
             dt1.Rows[0].Delete();
             dt1.Rows[1].Delete();
             dt1.Rows[dt1.Rows.Count - 1].Delete();
-            //dt2.Columns.Add("Successes");
-            //dt2.Columns.Add("Failures");
-            //foreach (DataRow x in dt1.Rows)
-            //{
-
-            //    string y = x[0].ToString();
-            //    DataRow row1 = dt2.NewRow();
-            //    while (!y.Equals("Failures"))
-            //    {
-
-            //        row1["Successes"] = y;
-            //    }
-
-
-            //    dt2.Rows.Add(row1);
-            //}
+            
             Desgrid.ItemsSource = dt1.DefaultView;
 
         }
